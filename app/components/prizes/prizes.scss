@@ -1,0 +1,284 @@
+.prizes{
+    padding: 0 0 120px 0;
+    @media (min-width:1280px) and (max-width:1620px) {
+        padding: (0 0 120px * 0.6 0);
+    }
+    @include media-breakpoint-down(mobile){
+        padding: 70px 0 0 0;
+    }
+    &__text{
+        color: #fff;
+        text-align: center;
+        transform: rotate(-6.15deg);
+        padding: 0 45px;
+        margin-bottom: 41px;
+        position: relative;
+        @media (min-width:1280px) and (max-width:1620px) {
+            padding: (0 45px * 0.6);
+            margin-bottom: (41px * 0.6);
+        }
+        @include media-breakpoint-down(tablet){
+            padding: 0;
+        }
+        @include media-breakpoint-down(mobile){
+            padding: 0;
+            margin-bottom: 0;
+        }
+        &_left{
+            left: 56px;
+            top: 35px;
+            @media (min-width:1280px) and (max-width:1620px) {
+                left: (56px * 0.6);
+                top: (35px * 0.6);
+            }
+            @include media-breakpoint-down(mobile){
+                left: 52px;
+                top: 0px;
+                width: 146px;
+                margin: 0 auto;
+            }   
+        }
+        &_right{
+            right: 30px;
+            top: 45px;
+            @media (min-width:1280px) and (max-width:1620px) {
+                right: (30px * 0.6);
+                top: (45px * 0.6);
+            }
+            @include media-breakpoint-down(mobile){
+                left: 3%;
+                top: 0;
+            }
+        }
+    }
+    &__row{
+        display: flex;
+        margin-right: -10px;
+        margin-top: 110px;
+        @media (min-width:1280px) and (max-width:1620px) {
+            margin-top: (110px * 0.6);
+            margin-right: (-10px * 0.6);
+        }
+        @include media-breakpoint-down(mobile){
+            flex-direction: column;
+            max-width: 100%;
+            margin-top: 70px;
+        }
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: calc(33% - 5px);
+        margin-right: 10px;
+        @media (min-width:1280px) and (max-width:1620px) {
+            margin-right: (10px * 0.6);
+        }
+        @include media-breakpoint-down(mobile){
+            margin-bottom: 70px;
+            margin-right: 0;
+        }
+        &:nth-child(1){
+            @include media-breakpoint-down(mobile){
+                order: 1;
+                width: 100%;
+            }
+            .prizes__pic{
+                @media (min-width:1280px) and (max-width:1620px) {
+                    width: 277px;
+                }
+                @include media-breakpoint-down(mobile){
+                    width: 216px;
+                     margin: 0 auto;
+                }
+            }
+            .prizes__arrow{
+                @media (min-width:1280px) and (max-width:1620px) {
+                    width: 105px;
+                }
+                @include media-breakpoint-down(mobile){
+                    width: 91px;
+                    bottom: 6px;
+                    left: 53%;
+                    transform: translateX(-122px);
+                } 
+            }
+        }
+        &:nth-child(2){
+            flex-direction: column-reverse;
+            align-self: center;
+            margin-left: 68px;
+            @media (min-width:1280px) and (max-width:1620px) {
+                margin-left: 4.8px;
+            }
+            @include media-breakpoint-down(tablet){
+                margin-left: 26px;
+            }
+            @include media-breakpoint-down(mobile){
+                width: 100%;
+                flex-direction: row;
+                position: relative;
+                margin-left: 62px;
+            }
+            .prizes__main{
+                br{
+                    @include media-breakpoint-down(tablet){
+                        display: none;
+                    }
+                }
+            }
+            .prizes__text{
+                transform: rotate(-8.13deg);
+                top: -20px;
+                left: -30px;
+                @media (min-width:1280px) and (max-width:1620px) {
+                    top: -12px;
+                    left: -2px;
+                }
+                @include media-breakpoint-down(tablet){
+                    top: -22px;
+                    left: 5px;
+                }
+                @include media-breakpoint-down(mobile){
+                    top: -22px;
+                    left: -15px;
+                }
+            }
+            .prizes__arrow{
+                @media (min-width:1280px) and (max-width:1620px) {
+                    width: 61px;
+                    right: -20px;
+                } 
+            }
+            .prizes__arrow_mob{
+                right: 20%;
+                top: 40px;
+                @include media-breakpoint-down(mobile){
+                    right: 33%;
+                    top: 61px;
+                }
+                
+            }
+            .prizes__pic{
+                @media (min-width:1280px) and (max-width:1620px) {
+                    width: 277px;
+                }
+                @include media-breakpoint-down(mobile){
+                    margin-left: -68px;
+                    width: 288px;
+                }
+            }
+        }
+        &:nth-child(3){
+            @include media-breakpoint-down(mobile){
+                order: -1;
+                width: 100%;
+                flex-direction: row;
+            }
+            .prizes__text{
+                transform: rotate(7.59deg);
+                margin-right: 20px;
+                @media (min-width:1280px) and (max-width:1620px) {
+                    margin-right: (20px * 0.6);
+                }
+                @include media-breakpoint-down(mobile){
+                    margin-right: 0;
+                    transform: rotate(-9.48deg);
+                }
+            }
+            .prizes__pic{
+                @media (min-width:1280px) and (max-width:1620px) {
+                    width: 277px;
+                }
+                @include media-breakpoint-down(mobile){
+                    order: 1;
+                }
+            }
+            .prizes__arrow{
+                @media (min-width:1280px) and (max-width:1620px) {
+                    width: 74px;
+                } 
+            }
+            .prizes__arrow_mob{
+                @include media-breakpoint-down(mobile){
+                    top: 105px;
+                    left: 22%;
+                }
+            }
+            
+        }
+    }
+
+    &__main{
+        font-size: 30px;
+        margin-bottom: 30px;
+        @media (min-width:1280px) and (max-width:1620px) {
+            margin-bottom: (30px * 0.6);
+            font-size: (30px * 0.6);
+        }
+        @include media-breakpoint-down(tablet){
+            font-size: 20px;
+        }
+        @include media-breakpoint-down(mobile){
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+    }
+    &__description{
+        font-size: 26px;
+        @media (min-width:1280px) and (max-width:1620px) {
+            font-size: (26px * 0.6);
+        }
+        @include media-breakpoint-down(tablet){
+            font-size: 20px;
+        }
+        @include media-breakpoint-down(mobile){
+            font-size: 14px;
+        }
+    }
+    &__arrow{
+        position: absolute;
+        &_left{
+            bottom: 21px;
+            left: -16px;
+            @media (min-width:1280px) and (max-width:1620px) {
+                bottom: 43px;
+                left: (-16px * 0.6);
+            }
+            @include media-breakpoint-down(tablet){
+                bottom: 75px;
+                left: -16px;
+            }
+        }
+        &_center{
+            top: 130px;
+            right: 0;
+            @media (min-width:1280px) and (max-width:1620px) {
+                top: (130px * 0.6);
+            }
+            @include media-breakpoint-down(tablet){
+                top: 78px;
+                right: -48px;
+            }
+            @include media-breakpoint-down(mobile){
+                display: none;
+            }
+        }
+        &_right{
+            bottom: 52px;
+            right: 0;
+            @media (min-width:1280px) and (max-width:1620px) {
+                bottom: (52px * 0.6);
+            }
+            @include media-breakpoint-down(mobile){
+                display: none;
+            }
+        }
+        &_mob{
+            display: none;
+            @include media-breakpoint-down(mobile){
+                display: block;
+            }
+        }
+    }
+}

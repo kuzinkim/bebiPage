@@ -1,0 +1,130 @@
+.popup#one-popup.mfp-hide
+    .popup__bg.js-popup-outside
+    .popup__inner
+        .popup__close.js-popup-close
+            img(src="assets/images/Close.svg", alt="")
+        .popup__content
+            .popup__contur
+                img(src="assets/images/Group.svg", alt="")
+                .popup__mail.popup__mail_stepone.js-step-one.js-popup-mail
+                    .popup__title
+                        h2 СОСТАВЬТЕ ПИСЬМО
+                    form.form.js-form-step-1(data-validate autocomplete="off")
+                        .form__field
+                            span.form__text.js-generate-title Привет,
+                            input(class="form__inp js-inp js-generate-title" type="text" name="name" maxlength="30" required placeholder='(имя малыша)')
+                            span.form__text.js-generate-title я твой папа!
+                        .form__field.form__field_center
+                            span.form__text.form__text_mb.js-generate-text Когда я впервые взял тебя на руки, я почувствовал
+                            //- input(class="form__inp js-inp js-generate-text" type="text" name="feel" required maxlength="86" placeholder='(напишите о ваших чувствах)')
+                            .form__field-wrap
+                                textarea(class="js-inp js-size js-generate-text" name="feel", cols="30", rows="1" required maxlength="86" placeholder='(напишите о ваших чувствах)')
+                        .form__field
+                            span.form__text.form__text_mb.js-generate-text Когда я впервые увидел твою улыбку,
+                            .form__field-wrap
+                                textarea(class="js-size js-generate-text" name="smile", cols="30", rows="1" required maxlength="86" placeholder='(опишите свою радость)')
+                        .form__btn
+                            button.form__submit.button Продолжить
+                .popup__mail.popup__mail_steptwo.js-step-two.js-popup-mail
+                    .popup__title
+                        h2 СОСТАВЬТЕ ПИСЬМО
+                    form.form.js-form-step-2(data-validate autocomplete="off")
+                        .form__field.form__field_center
+                            span.form__text.js-generate-text Я от души посмеялся, когда
+                            .form__field-wrap
+                                textarea(class="js-autosize js-generate-text" name="glad", cols="30", rows="1" required maxlength="129" placeholder='(опишите забавный случай)')
+                        .form__field.form__field_center
+                            span.form__text.form__text_mb.js-generate-text Я желаю, чтобы ты всегда
+                            .form__field-wrap
+                                textarea(class="js-size js-generate-text" name="wish", cols="30", rows="1" required maxlength="86" placeholder='(напишите ваше главное напутствие)')
+                        .form__field
+                            span.form__text.form__text_mb.js-generate-text Я желаю, чтобы ты всегда
+                            .form__field-wrap
+                                textarea(class="js-size js-generate-text" name="text1", cols="30", rows="1" required maxlength="129" placeholder='(если вы хотите что-то добавить, пишите. Не стесняйтесь!)')
+                        .form__btn
+                            button.form__submit.button Продолжить
+                        a(href="#").form__prev.js-prev Назад
+                .popup__mail.popup__mail_top.js-step-three.js-popup-mail
+                    .popup__mail-card.js-wrap-mail(style="background-image: url(assets/images/mail_card.svg)")
+                        .popup__contur.js-wrap-contur(data-target="1")
+                            .popup__contur-left
+                                include ../../assets/images/contur_left1.svg
+                            .popup__contur-right
+                                include ../../assets/images/contur_right1.svg
+                        .popup__contur.popup__contur_hide.js-wrap-contur(data-target="2")
+                            .popup__contur-left
+                                include ../../assets/images/left_flower.svg
+                            .popup__contur-right
+                                include ../../assets/images/right_flower.svg
+                        .popup__contur.popup__contur_hide.js-wrap-contur(data-target="3")
+                            .popup__contur-left
+                                include ../../assets/images/contur_left3.svg
+                            .popup__contur-right
+                                include ../../assets/images/contur_right3.svg
+                        .popup__mail-text.generate
+                            span.generate__title.js-title
+                            span.generate__text.js-text
+                    .popup__mail-card.popup__mail-card_mob.js-wrap-mail(style="background-image: url(assets/images/mail_mob.svg)")
+                        .popup__contur.js-wrap-contur(data-target="1")
+                            .popup__contur-left
+                                include ../../assets/images/contur_left1.svg
+                            .popup__contur-right
+                                include ../../assets/images/contur_right1.svg
+                        .popup__contur.popup__contur_hide.js-wrap-contur(data-target="2")
+                            .popup__contur-left
+                                include ../../assets/images/left_flower.svg
+                            .popup__contur-right
+                                include ../../assets/images/right_flower.svg
+                        .popup__contur.popup__contur_hide.js-wrap-contur(data-target="3")
+                            .popup__contur-left
+                                include ../../assets/images/contur_left3.svg
+                            .popup__contur-right
+                                include ../../assets/images/contur_right3.svg
+                        .popup__mail-text.generate
+                            span.generate__title.js-title
+                            span.generate__text.js-text
+                    form.form.js-form-step-3(data-validate autocomplete="off")
+                        .form__row
+                            .form__radio
+                                label
+                                    input(class="radio__pic js-radio-pic" type="radio" name="uzor" value="1" checked)
+                                    .form__radio-icon.form__radio-icon_dolph  
+                                label
+                                    input(class="radio__pic js-radio-pic" type="radio" name="uzor" value="2")
+                                    .form__radio-icon.form__radio-icon_flower       
+                                label
+                                    input(class="radio__pic js-radio-pic" type="radio" name="uzor" value="3")
+                                    .form__radio-icon.form__radio-icon_heart
+                            .form__radio
+                                label
+                                    input(class="radio__color js-radio-color" type="radio" name="color" value="#FFCA4C" checked)
+                                    .form__radio-icon(style="background-color: #FFCA4C")
+                                label
+                                    input(class="radio__color js-radio-color" type="radio" name="color" value="#AFDC30")
+                                    .form__radio-icon(style="background-color: #AFDC30")
+                                label
+                                    input(class="radio__color js-radio-color" type="radio" name="color" value="#FF9FBC")
+                                    .form__radio-icon(style="background-color: #FF9FBC")
+                        span.form__text.form__text_small Выберите понравившуюся рамку и цвет
+                        .form__btn.form__btn_check
+                            button.form__submit.button Завершить
+                        a(href="#").form__prev.js-prev Назад
+                .popup__mail.popup__mail_stepfour.js-step-four
+                    .popup__title
+                        h2 ВАШЕ ПИСЬМО ГОТОВО
+                    form.form.js-form-step-4(data-validate autocomplete="off" method="POST")
+                        .form__field
+                            span.form__text.form__text_mail На сайте ваше письмо появится после модерации. Напишите ваш e-mail, чтобы получать новости о конкурсе
+                            input(class="form__inp js-inp" type="email" name="mail" required placeholder='E-mail')
+                        .form__check
+                            label
+                                input(class="form__checkbox js-inp" type="checkbox" name="check" required checked)
+                                .form__check-icon
+                            span.form__check-text Согласие на обработку персональных данных
+                        .form__mail
+                            img(src="assets/images/Convert.svg", alt="")
+                        span.form__text.form__text_center Поделитесь письмом в социальных сетях и получите шанс выиграть ценные призы от Bebi® Premium!
+                        .form__btn.form__btn_share
+                            button.form__submit.button Поделиться
+            
+            

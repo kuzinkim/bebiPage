@@ -1,0 +1,164 @@
+.mail{
+    padding: 0 0 120px 0;
+    @include media-breakpoint-down(mobile){
+        padding: 0;
+        
+    }
+    &__inner{
+        position: relative;
+        overflow: hidden;
+        width: 100vw;
+        left: 50%;
+        width: 100vw;
+        margin-left: -50vw;
+        padding: 0 0 50px;
+
+    }
+    &__wrap{
+        flex-shrink: 0;
+        padding: 0 7px;
+        &:first-child{
+            padding-left: calc((100vw - 1352px) / 2);
+            @media (min-width:1280px) and (max-width:1620px) {
+                padding-left: calc((100vw - 811px) / 2);
+            }
+            @include media-breakpoint-down(tablet) {
+                padding-left: 20px;
+            } 
+        }
+        &:last-child{
+            padding-right: calc((100vw - 1352px) / 2);
+            @media (min-width:1280px) and (max-width:1620px) {
+                padding-right: calc((100vw - 811px) / 2);
+            }
+            @include media-breakpoint-down(tablet) {
+                padding-right: 20px;
+            } 
+        }
+    }
+    &__row{
+        display: flex;
+        text-align: center;
+        margin-top: 26px;
+    }
+    &__item{
+        flex-shrink: 0;
+        position: relative;
+        width: 260px;
+        height: 325px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        user-select: none; 
+        &_flower{
+            &::after{
+                content: '';
+                display: block;
+                position: absolute;
+                background-image: url(../assets/images/mail1.svg);
+                background-repeat: no-repeat;
+                background-position: center center;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                user-select: none;
+            }
+            
+        }
+        &_dolphin{
+            &::after{
+                content: '';
+                display: block;
+                position: absolute;
+                background-image: url(../assets/images/mail2.svg);
+                background-repeat: no-repeat;
+                background-position: center center;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                user-select: none;
+            }
+            
+        }
+        &_heart{
+            &::after{
+                content: '';
+                display: block;
+                position: absolute;
+                background-image: url(../assets/images/mail3.svg);
+                background-repeat: no-repeat;
+                background-position: center center;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                user-select: none;
+            }
+        }
+        &-text{
+            position: absolute;
+            top: 27px;
+            color: #345DA3;
+            padding: 0px 25px;
+            @include media-breakpoint-down(mobile) {
+                top: 13px;
+                padding: 0px 15px;
+            } 
+
+        }  
+    }
+    &__wrapper{
+        text-align: center;
+        margin-top: 60px;
+        @include media-breakpoint-down(mobile) {
+            display: none;
+        } 
+    }
+    &__main{
+        font-size: 18px;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        @include media-breakpoint-down(mobile) {
+            font-size: 18px;
+            margin-bottom: 7px;
+        } 
+    }
+    &__description{
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 15px;
+        @include media-breakpoint-down(mobile) {
+            font-size: 11px;
+            line-height: 13px;
+        } 
+    }
+}
+
+.ps {
+    &__rail-x,
+    &__rail-y {
+      position: absolute;
+      opacity: 1 !important;
+      background-color: rgba(255, 255, 255, 0.8) !important;
+    }
+    &__rail-x {
+        height: 6px !important;
+        margin: 0 calc((100vw - 1352px) / 2);
+        bottom: 5px !important;
+        @media (min-width:1280px) and (max-width:1620px) {
+            margin: 0 calc((100vw - 811px) / 2);
+        }
+        @include media-breakpoint-down(tablet) {
+            margin: 0 20px;
+        } 
+    }
+    &__thumb-x {
+      position: absolute;
+      height: 16px !important;
+      background-color:#FFF !important;
+      bottom: -4px;
+    }
+  }
+

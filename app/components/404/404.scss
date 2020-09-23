@@ -1,0 +1,51 @@
+.page404{
+    &__inner{
+        padding: 170px 0;
+    }
+    &__title{
+        font-size: 144px;
+        font-weight: bold;
+        color: #fff;
+        @include media-breakpoint-down(mobile) {
+            font-size: 48px;
+        }
+    }
+    &__text{
+        font-size: 30px;
+        display: block;
+        text-transform: uppercase;
+        color: #fff;
+        @include media-breakpoint-down(mobile) {
+            font-size: 14px;
+        }
+    }
+    &__wrap{
+        position: relative;
+        width: 413px;
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        @include media-breakpoint-down(mobile) {
+            width: 248px;   
+        }
+    }
+    &__arrow{
+        position: absolute;
+        top: 51%;
+        right: -43px;
+        @include media-breakpoint-down(mobile) {
+            top: 51%;
+            right: -25px;
+            height: 60px;
+        }
+    }
+    &__btn{
+        margin-top: 168px;
+        @include media-breakpoint-down(mobile) {
+            margin-top: 89px;
+        }
+    }
+    .header__nav{
+        display: none;
+    }
+}

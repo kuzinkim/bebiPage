@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="772" height="525" viewBox="0 0 772 525" fill="none" data-depth="0.1">
+    <g>
+        <g opacity="0.75" data-depth="0.2">
+            <path opacity="0.75" d="M359.202 31.3129L351.668 63.6279L404.989 76.157L412.523 43.8421L359.202 31.3129Z"
+                stroke="white" stroke-miterlimit="10" stroke-linejoin="round" />
+            <path opacity="0.75" d="M412.448 43.8679L381.046 58.176L359.165 31.3408" stroke="white"
+                stroke-miterlimit="10" stroke-linejoin="round" />
+            <path opacity="0.75" d="M404.937 76.1651L386.073 55.9199" stroke="white" stroke-miterlimit="10"
+                stroke-linejoin="round" />
+            <path opacity="0.75" d="M377.555 53.9014L351.653 63.638" stroke="white" stroke-miterlimit="10"
+                stroke-linejoin="round" />
+        </g>
+
+
+    </g>
+
+    <defs>
+        <clipPath>
+            <rect width="166.796" height="161.415" fill="white" transform="translate(170.618 0.554321)" />
+        </clipPath>
+        <clipPath>
+            <rect width="109.404" height="120.165" fill="white" transform="translate(303.338 31.0439)" />
+        </clipPath>
+        <clipPath>
+            <rect width="772" height="374" fill="white" transform="translate(0 150.131)" />
+        </clipPath>
+    </defs>
+</svg>

@@ -1,0 +1,105 @@
+/**
+ * Global
+ */
+ 
+*,
+*::after,
+*::before {
+    outline: none !important;
+    box-sizing: border-box;
+    min-width: 0;
+    min-height: 0;
+    touch-action: manipulation;
+}
+
+html,
+body {
+    width: 100%;
+    font-size: 16px;
+    line-height: normal;
+    font-family: 'DINRoundPro', sans-serif;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &.is-hidden{
+        overflow: hidden;
+        &-mobile{
+            overflow: hidden;
+        }
+    }
+}
+input, select, textarea, button {
+    font-family: 'DINRoundPro', sans-serif;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    font-size: 10px;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 1475px;
+    margin: 0 auto;
+    max-width: calc(100% - 40px);
+    @media (min-width:1280px) and (max-width:1620px) {
+        width: (1475px * 0.6);
+    }
+    @include media-breakpoint-down(tablet){
+        margin: 0 20px;
+        width: auto;
+        max-width: none;
+        
+        
+    }
+    &_main{
+        width: 1660px;
+        margin: 0 auto;
+        max-width: calc(100% - 80px);
+        @media (min-width:1280px) and (max-width:1620px) {
+            width: (1660px * 0.6);
+        }
+        @include media-breakpoint-down(tablet){
+            margin: 0 20px;
+            width: auto;
+            max-width: none;
+        }
+    }
+    &_fluid{
+        width: 1372px;
+        margin: 0 auto;
+        @media (min-width:1280px) and (max-width:1620px) {
+            width: 811px;
+            margin: 0 auto;
+        }
+        @include media-breakpoint-down(tablet){
+            margin: 0 20px;
+            width: auto;
+        }
+    }
+    
+}
+
